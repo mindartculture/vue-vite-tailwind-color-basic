@@ -10,6 +10,13 @@ export default defineNuxtConfig({
     viewer: true,
   },
 
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
   nitro: {
     routeRules: {
       '/**': { cache: { swr: true } }
